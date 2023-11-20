@@ -6,6 +6,8 @@ hash_domain!(
 );
 hash_domain!(TariDanConsensusHashDomain, "com.tari.dan.consensus");
 hash_domain!(TariEngineHashDomain, "com.tari.dan.engine");
+
+// Hash domain used to derive the final AEAD encryption key for encrypted data in UTXOs
 hash_domain!(
     TransactionSecureNonceKdfDomain,
     "com.tari.base_layer.core.transactions.secure_nonce_kdf"
