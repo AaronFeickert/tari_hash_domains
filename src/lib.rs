@@ -2,7 +2,8 @@ use tari_crypto::hash_domain;
 
 hash_domain!(
     ConfidentialOutputHashDomain,
-    "com.tari.dan.confidential_output"
+    "com.tari.dan.confidential_output",
+    1
 );
 hash_domain!(TariEngineHashDomain, "com.tari.dan.engine", 0);
 
@@ -14,9 +15,11 @@ hash_domain!(
 );
 hash_domain!(
     ValidatorNodeBmtHashDomain,
-    "com.tari.base_layer.core.validator_node_mmr"
+    "com.tari.base_layer.core.validator_node_mmr",
+    1
 );
 hash_domain!(
     WalletOutputEncryptionKeysDomain,
-    "com.tari.base_layer.wallet.output_encryption_keys"
+    "com.tari.base_layer.wallet.output_encryption_keys",
+    1
 );
